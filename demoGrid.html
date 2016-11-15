@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dynamic Grid system</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../css/AdminLTE.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="skin-black">
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <aside class="right-side">
+                <section class="content">
+                <div class="box box-warning" >
+                      <div class="box-body">
+                       <div class="row" id="notifyme_url" style="display: none"></div>
+                            <h4>Dynamic Grid System</h4>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="input_url" placeholder="Input you value and press enter">
+                                  </div>
+                      </div>
+                      <div class="box-body" id="tampilurl">
+
+                      </div>
+                </div>
+                </section>
+            </aside>
+        </div>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../js/AdminLTE/app.js" type="text/javascript"></script>
+        <script language="javascript">
+        function delete_url(buttonid)
+        {
+                document.getElementById('notifyme_url').innerHTML='<div class="col-xs-8 col-md-4"><h4>Delete grid</h4></div>';
+                var idku=buttonid;
+                $('div#'+idku+' div').remove();
+                document.getElementById("input_url").value='';
+                document.getElementById("input_url").focus();
+
+            $( "#notifyme_url" ).show( "slow" );
+            setTimeout(function(){$( "#notifyme_url" ).hide( "slow" ); },4000);
+            return false
+        }
+        function makeid()
+        {
+            var text = "";
+            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+            for( var i=0; i < 5; i++ )
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+            return text;
+        }
+        $('#input_url').bind("enterKey",function(e){
+             tambah_url();
+        });
+        $('#input_url').keyup(function(e){
+        if(e.keyCode == 13)
+        {
+          $(this).trigger("enterKey");
+        }
+        });
+        function tambah_url()
+        {
+            var randomku= makeid();
+            var buttonid= 'buttonid'+randomku;
+            document.getElementById('notifyme_url').innerHTML='<div class="col-xs-8 col-md-4"><h4>Successfully add grid</h4></div>';
+            var url=document.getElementById("input_url").value;
+            var evt="'"+url+"'";
+            var btnid="'"+buttonid+"'";
+            document.getElementById("tampilurl").innerHTML += '<div class="form-group" id="'+buttonid+'" ><div class="row" ><div class="col-md-5"><pre>'+url+'</pre></div><div class="col-md-2"><button type="button" onClick="delete_url('+btnid+')" class="btn btn-primary">Delete</button></div></div></div>';
+            document.getElementById("input_url").value='';
+            document.getElementById("input_url").focus();
+            $( "#notifyme_url" ).show( "slow" );
+            setTimeout(function(){$( "#notifyme_url" ).hide( "slow" ); },3000);
+            return false
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--jQuery Validation Plugin  -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+
+
+    <script src="movieDB2.js"></script>
+
+    <style>
+      .error {
+        color:red;
+        font-size: x-small;
+        font-family:verdana, Helvetica;
+      }
+      label {
+        display: inline-block;
+        width: 140px;
+        text-align: right;
+      }​
+    </style>
+
+    <title>Movie DB</title>
+
+  </head>
+  <body>
+    <div id="navPanel" class="container">
+      <hr>
+      <table class="table-striped table-condensed">
+        <tr>
+          <td><a href="../landingpage.html"><strong>HOME</strong></a></td>
+          <td>&nbsp;&nbsp;</td>
+          <td><a href="moviesDB.html"><strong>REFRESH</strong></a></td>
+        </tr>
+      </table>
+      <hr>
+    </div>
+    <div id="panel1" class="container">
+      <fieldset>
+        <legend> Add Movie: </legend>
+            <div id="addPanel"></div><br>
+            <div id="addBtnPanel"></div>
+      </fieldset>
+    </div>
+    <br>
+    <div id="panel0" class="container">
+      <fieldset>
+        <legend id="dbTitle">  </legend>
+            <div id="dbPanel"></div>
+      </fieldset>
+    </div>
+  </body>
+</html>
