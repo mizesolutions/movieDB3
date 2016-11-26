@@ -8,12 +8,13 @@
   header("Access-Control-Allow-Origin: *");
   header("Content-Type: application/json; charset=UTF-8");
 
-  $ID = $_POST['data'];
+  $ID = $_GET['data'];
 
   require_once "../format_function/dollarFormat_functions.php";
 
   try {
-    $conn = new PDO("mysql:host=$se;dbname=mizesolu_movies", $us, $pa);
+
+    $conn = new PDO("mysql:host=$se;dbname=mizesolu_tmdbList", $us, $pa);
 
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

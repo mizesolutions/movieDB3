@@ -14,7 +14,7 @@
 
   try {
 
-    $conn = new PDO("mysql:host=$se;dbname=mizesolu_movies", $us, $pa);
+    $conn = new PDO("mysql:host=$se;dbname=mizesolu_tmdbList", $us, $pa);
 
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -25,7 +25,7 @@
     $stmt->bindParam(':ID', $ID[0], PDO::PARAM_STR);
     $stmt->execute();
 
-    http_response_code(200);
+    http_response_code(204);
 
     $conn = null;
 
