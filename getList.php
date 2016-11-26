@@ -10,11 +10,12 @@
   require_once "../format_function/dollarFormat_functions.php";
 
   try {
-    $conn = new PDO("mysql:host=$se;dbname=mizesolu_movieList", $us, $pa);
+
+    $conn = new PDO("mysql:host=$se;dbname=mizesolu_tmdbList", $us, $pa);
 
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = 'SELECT TITLE
+    $sql = 'SELECT *
             FROM MOVIES
             ORDER BY TITLE ASC';
 

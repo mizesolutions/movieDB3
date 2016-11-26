@@ -2,69 +2,63 @@
 <html>
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!--jQuery Validation Plugin  -->
+    <!--jQuery Validation Plugin -->
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-
-
-
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    <!-- MyJS -->
     <script src="movieDB2.js"></script>
-
+    <!--Style for jQuery Validation Plugin -->
     <style>
       .error {
         color:red;
-        font-size: x-small;
+        font-size:85%;
         font-family:verdana, Helvetica;
       }
-      label {
-        display: inline-block;
-        width: 140px;
-        text-align: right;
-      }​
+      .open > .dropdown-menu {
+        /*display: block;*/
+      }
     </style>
-
-    <title>Movie DB</title>
-
+    <title>MizeMovieDB</title>
   </head>
   <body>
-    <div id="navPanel" class="container">
-      <hr>
-      <table class="table-striped table-condensed">
-        <tr>
-          <td><a href="../landingpage.html"><strong>HOME</strong></a></td>
-          <td>&nbsp;&nbsp;</td>
-          <td><a href="moviesDB.html"><strong>REFRESH</strong></a></td>
-        </tr>
-      </table>
-      <hr>
-    </div>
+    <nav class="navbar navbar-inverse navbar-top">
+      <div id="navPanel" class="container">
+        <div class="col-sm-10 col-md-10 col-lg-10">
+          <div class="navbar-header active">
+            <a class="navbar-brand" href="moviesDB.html">MizeMoveDB</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="../landingpage.html">Home</a></li>
+            <li>&emsp;&emsp;&emsp;</li>
+          </ul>
+          <button class="btn btn-success navbar-btn" id="addBtn1">Add Movie</button>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2" id="tmdbLogo">
+          <a href="https://www.themoviedb.org/" target="_blank"><img src="./img/150x59-powered-by-rectangle-green.png" alt="tmdb.org logo"></a>
+        </div>
+      </div>
+    </nav>
     <div id="panel1" class="container">
-      <fieldset>
-        <legend> Add Movie: </legend>
-            <div id="addPanel"></div><br>
-            <div id="addBtnPanel"></div>
-      </fieldset>
+      <div id="addPanel1" class="well">
+        <div class="row" id="addFormPanel">
+          <div class="col-sm-6 col-md-6 col-lg-6" id="addFormLeft"></div>
+          <div class="col-sm-6 col-md-6 col-lg-6" id="addFormRight"></div>
+        </div>
+        <div id="addingPanel"><br><h4>Adding Movie...</h4></div>
+      </div>
     </div>
-    <br>
     <div id="panel0" class="container">
-      <fieldset>
-        <legend id="dbTitle">  </legend>
-            <div id="dbPanel"></div>
-      </fieldset>
+      <div id="dbPanel"></div>
     </div>
+    <div id="navBarBtm"></div>
   </body>
 </html>

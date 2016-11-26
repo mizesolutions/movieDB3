@@ -1,0 +1,21 @@
+[12-Nov-2016 10:45:20 America/Denver] PHP Fatal error:  Class 'HttpRequest' not found in /home4/mizesolu/public_html/movieDB3/tmdb_getTitle.php on line 5
+[12-Nov-2016 10:51:14 America/Denver] PHP Fatal error:  Class 'HttpRequest' not found in /home4/mizesolu/public_html/movieDB3/tmdb_getTitle.php on line 5
+[12-Nov-2016 10:52:42 America/Denver] PHP Fatal error:  Class 'HttpRequest' not found in /home4/mizesolu/public_html/movieDB3/tmdb_getTitle.php on line 5
+[12-Nov-2016 10:53:49 America/Denver] PHP Fatal error:  Class 'HttpRequest' not found in /home4/mizesolu/public_html/movieDB3/tmdb_getTitle.php on line 5
+[13-Nov-2016 17:12:29 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[13-Nov-2016 17:12:42 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[13-Nov-2016 17:12:55 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[13-Nov-2016 17:19:13 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[13-Nov-2016 17:19:34 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[13-Nov-2016 17:21:15 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[13-Nov-2016 17:21:23 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[13-Nov-2016 18:10:25 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[13-Nov-2016 18:10:30 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[13-Nov-2016 20:15:58 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[14-Nov-2016 06:16:44 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 31
+[16-Nov-2016 22:56:12 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 32
+[16-Nov-2016 22:56:33 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 32
+[16-Nov-2016 22:56:50 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 32
+[16-Nov-2016 22:56:57 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 32
+[16-Nov-2016 22:57:17 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 32
+[16-Nov-2016 22:57:24 America/Denver] PHP Notice:  Undefined variable: conn in /home4/mizesolu/public_html/movieDB3/getList.php on line 32
